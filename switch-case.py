@@ -1,6 +1,6 @@
 #we use if/elif/else if we need to use switch in python. We don't have switch-case in python.
 #example
-task1 = 0
+task1 = 1
 task2 = 0
 #end of task switchers
 
@@ -9,7 +9,6 @@ if task1 == 1:
         userchoice = int(input("Please enter a number"))
         if userchoice == 1:
             print("you entered 1 ")
-            break
         elif userchoice == 2:
             print("you entered 2 ")
         elif userchoice == 3:
