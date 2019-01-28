@@ -7,7 +7,10 @@
 task1 = 0  #lists
 task2 = 0  #mathrixes
 task3 = 0  # tuples
-task4 = 1  # ranges
+task4 = 0  # ranges
+task5 = 0  # exercises
+task6 = 0  #slicing
+task7 = 1  #task
 
 
 if task1 == 1:
@@ -45,4 +48,35 @@ if task4 == 1:
         print(m)
 
 
+if task5 == 1:
+    l1 = [1,2,3]
+    l2 = [4,5,6]
 
+    print(l1 + l2)
+    print(l1 * 5)
+
+    print(3 in range(4))  #returns "True" because 3 is in 1-4
+    username = "blahblah"
+    print( "h" not in username ) #trturns "False" because "h" is in "blahblah"
+
+if task6 == 1:
+    #slicing
+    #str = list[start:end:step]
+    l1 = [1,2,3]
+    l2 = [4,5,6]
+    l = l1 + l2
+
+    print(l[2:])
+    print(l[:2])
+
+    str = "abcdefg"
+    print(str[::2])
+
+if task7 == 1:
+    m = [
+        [1,2,3],
+        [4,5,6],
+        [7,8,9],
+    ]
+    sm = m[0][1]
+    print(sm)
