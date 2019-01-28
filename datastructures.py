@@ -37,5 +37,12 @@ if task4 == 1:
     r1 = range(2,11,2)
     print(list(r1))
 
-for i in range(2,11,2):
-    print(i)
+    for i in range(2,11,2):
+        print(i)
+
+#printing all odd numbers in [-10..0]
+    for m in range(-9,1,2):
+        print(m)
+
+
+
