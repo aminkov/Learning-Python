@@ -16,3 +16,5 @@ print(unionset)
 
 b.union(unionset)
 print(b)
+
+print(b | unionset)
