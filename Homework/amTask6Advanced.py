@@ -19,17 +19,10 @@ distances_from_sofia = [
     ("London", 2019),
     ("Madrid", 2259),
 ]
-a=0
-#create a new dict to use for sorting
-new_dict = {}  
-#fill in th enew dict with filtered values
-for i,j in distances_from_sofia:
+new_dict = {}                               #create a new dict to use for sorting
+for i,j in distances_from_sofia:            #fill in th enew dict with filtered values
     if (int(j)<1500):
         new_dict[j] = i
-    a += 1
-#sort keys of new dict in a list
-ressort = sorted(new_dict)
-#use sorted list to solve the task
-for i in ressort:
-    print("{} - {}".format(new_dict[i], i))
-#cool, it's working!
+ressort = sorted(new_dict)                  #fill in th enew dict with filtered values
+for i in ressort:                           #use sorted list to solve the task
+    print("{} - {}".format(new_dict[i], i)) #cool, it's working!
