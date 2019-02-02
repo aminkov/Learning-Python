@@ -5,7 +5,7 @@
 # print(names)
 ## ['ivan', 'maria', 'petar', 'ivanov', 'popova', 'petrov']
 
-names = ("ivan", "maria", "petar")
-surnames = ("ivanov", "popova", "petrov")
+names = ["ivan", "maria", "petar"]
+surnames = ["ivanov", "popova", "petrov"]
 all_names = names + surnames
 print(all_names)
