@@ -9,6 +9,7 @@ verify_ssl = true
 matplotlib = "*"
 numby = "*"
 bpython = "*"
+numpy = "*"
 
 [requires]
 python_version = "3.7"

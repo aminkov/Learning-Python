@@ -13,14 +13,11 @@ student_scores = {
     'Georgy': 5.00,
     'Georgi1':4.00,
 }
-
-print(student_scores)
 best_students_scores = {}
 for j in student_scores:
     if (student_scores[j]>=5):
         best_students_scores[j] = student_scores[j]
 
-print(best_students_scores)
 for i in best_students_scores:
     print(i)
 #code end
