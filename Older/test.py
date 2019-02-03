@@ -9,6 +9,6 @@ print("|%-10d|%10d|" % (567.56,5.67))
 print()
 print("|{:10d}|{:<10d}|".format(1,2))
 
-print(f"Hello {user_name.capitalize()}. You are {user_age} years old.")
+#print(f"Hello {user_name.capitalize()}. You are {user_age} years old.")
 
 

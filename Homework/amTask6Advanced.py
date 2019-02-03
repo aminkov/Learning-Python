@@ -23,6 +23,6 @@ new_dict = {}                               #create a new dict to use for sortin
 for i,j in distances_from_sofia:            #fill in th enew dict with filtered values
     if (int(j)<1500):
         new_dict[j] = i
-ressort = sorted(new_dict)                  #fill in th enew dict with filtered values
+ressort = sorted(new_dict)                  #fill in th new dict with filtered values
 for i in ressort:                           #use sorted list to solve the task
     print("{} - {}".format(new_dict[i], i)) #cool, it's working!

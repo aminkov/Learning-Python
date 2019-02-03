@@ -10,12 +10,24 @@
 # apple - 4
 
 #code start
-print("___________")
+print("____________")
 test = ("apple and banana one apple one banana a red apple and a green apple")
 listtext = test.split(" ")
+#find lenght of the longest word
+a=0
+for i in listtext:
+    a = max(a, len(i))
+#eliminate duplicate words
 words_set = set(listtext)
+#create a dictionary with unique words
+result_dict = {}
+b=0
 for i in words_set:
-    print("{} - {}".format(i,listtext.count(i)))
-print("___________")
+    result_dict[i] = listtext.count(i)
+#sort dictionary by key value
+sorted_d = sorted(result_dict.items(), key=lambda x: x[1], reverse=True)
+#print formated result
+for i,j in sorted_d:
+    print("{:{field_size}} |{:^3}|".format(i,j,field_size = a))
+print("____________")
 #code end
-
