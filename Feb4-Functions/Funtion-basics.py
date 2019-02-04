@@ -1,10 +1,11 @@
-#define a function with a parameter 'x'
-def foo(x):
+#define a function with a parameter 'x' with default value of 5.
+def foo(x=5):
     #what you write into the belows comment, goes to the help of the function:
     '''This function gets a string for input and returns it'''
     #function what to do
     print(x)
 #call the function
+#if we pass an explicit value to the function - it replaces the default value
 foo(3)
 
 def sum_num(x,y):
