@@ -35,7 +35,6 @@ def get_user_data():
         else:
             break
     return userdata
-    pass
 
 def calc_BMI(w,h):
     """calculates the BMI
@@ -51,7 +50,6 @@ def calc_BMI(w,h):
     bmi = round((w / (h*h)),2)
     print('Your BMI index is: {}'.format(bmi))
     return bmi
-    pass
 
 
 def calc_BMI_category(bmi):
@@ -79,7 +77,6 @@ def calc_BMI_category(bmi):
         return 'Super obese'
     elif bmi > 60:
         return 'Hyper Obese'
-    pass
 
 calc_BMI_category(bmi)
 
@@ -89,7 +86,6 @@ def print_results(bmi_category):
         bmi_category {[string]} -- []
     """
     print('Your BMI category is {}!'.format(bmi_category))
-    pass
 
 def cm_to_meters(cm):
     """converts centimetres to meters
@@ -102,7 +98,6 @@ def cm_to_meters(cm):
     """
     m = float(cm / 100)
     return m
-    pass
 
 user_data = get_user_data()
 bmi = calc_BMI(user_data["weight"],user_data["height"] )
