@@ -48,8 +48,8 @@ def calc_BMI(w,h):
         [float] -- [calculated BMI = w / (h*h)]
     """
     global bmi
-    bmi = w / (h*h)
-    print(bmi)
+    bmi = round((w / (h*h)),2)
+    print('Your BMI index is: {}'.format(bmi))
     return bmi
     pass
 
