@@ -6,7 +6,6 @@ userdata = {}
 bmi = 0
 def get_user_data():
     """retrieves user data from the command line
-
     Returns:
         [dictionary] of the form:
         {
@@ -38,11 +37,9 @@ def get_user_data():
 
 def calc_BMI(w,h):
     """calculates the BMI
-
     Arguments:
         w {[float]} -- [weight]
         h {[float]} -- [height]
-
     Returns:
         [float] -- [calculated BMI = w / (h*h)]
     """
@@ -50,7 +47,6 @@ def calc_BMI(w,h):
     bmi = round((w / (h*h)),2)
     print('Your BMI index is: {}'.format(bmi))
     return bmi
-
 
 def calc_BMI_category(bmi):
     """Calculates the BMI category
@@ -89,10 +85,8 @@ def print_results(bmi_category):
 
 def cm_to_meters(cm):
     """converts centimetres to meters
-
     Arguments:
         cm {[int]}
-
     Returns:
         [float]
     """
