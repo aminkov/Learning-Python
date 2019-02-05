@@ -1,30 +1,58 @@
 # https://progressbg-python-course.github.io/ProgressBG-VMware-Python-Slides/pages/themes/functions/functions.html#/17
 # Write a program which will calculate a user BMI.
 # Split your logic into functions, and organise your program as given bellow:
-#  def get_user_data():
-#   """retrieves user data from the command line
+userdata = {}
+def get_user_data():
+    """retrieves user data from the command line
 
-#   Returns:
-#     [dictionary] of the form:
-#       {
-#         "name" : "user_name",
-#         "height": "user heigth in meters",
-#         "weight": "user weight in kilograms"
-#       }
-#   """
-#   pass
+    Returns:
+        [dictionary] of the form:
+        {
+            "name" : "user_name",
+            "height": "user heigth in meters",
+            "weight": "user weight in kilograms",
+        }
+    """
+#     while True:
+#         global userdata
+#         userdata['name'] = input("Please, enter your name: ")
+#         if len(userdata['name']) < 2:
+#             continue
+#         else:
+#             break
+#     while True:
+#         userdata['height'] = float(input("Please, enter your height(meters): "))
+#         if userdata['height'] <= 50 or userdata['height'] >= 250 :
+#             continue
+#         else:
+#             break
+#     while True:
+#         userdata['weight'] = float(input("Please, enter your weight(kg.): "))
+#         if userdata['weight'] <= 5 or userdata['weight'] >= 300 :
+#             continue
+#         else:
+#             break    
+#     print(userdata)
+# get_user_data()
 
-# def calc_BMI(w,h):
-#   """calculates the BMI
+userdata = {'weight': 67.0, 'height': 67.0, 'name': 'yy'}
 
-#   Arguments:
-#     w {[float]} -- [weight]
-#     h {[float]} -- [height]
+def calc_BMI(w,h):
+    """calculates the BMI
 
-#   Returns:
-#     [float] -- [calculated BMI = w / (h*h)]
-#   """
-#   pass
+    Arguments:
+        w {[float]} -- [weight]
+        h {[float]} -- [height]
+
+    Returns:
+        [float] -- [calculated BMI = w / (h*h)]
+    """
+    bmi = w / (h*h)
+    return bmi
+    print(bmi)
+
+
+calc_BMI(userdata['height'],userdata['weight'])
 
 # def calc_BMI_category(bmi):
 #   """Calculates the BMI category
