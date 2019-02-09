@@ -5,7 +5,6 @@ def get_float_from_user(msg):
     inp = float(input(msg))
     return inp
 
-
 def get_string_from_user(msg):
     inp = str(input(msg))
     return inp
@@ -131,7 +130,6 @@ def cm_to_meters(cm):
     """
     m = float(cm / 100)
     return m
-
 
 user_data = get_user_data()
 bmi = calc_BMI(user_data["weight"],user_data["height"] )
