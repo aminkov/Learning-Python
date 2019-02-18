@@ -9,6 +9,5 @@ class Goose:
 def quack(obj):
     obj.quack()
 
-
 donald = Duck()
 lea = Goose()
