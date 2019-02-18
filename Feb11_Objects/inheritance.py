@@ -5,10 +5,12 @@ class Person():
 
 class Developer(Person):
     def __init__(self, name, age, skills):
+        super().__init__(name, age)
         self.skills = skills
 
 class Manager(Person):
     def __init__(self, name, age, manage):
+        super().__init__(name, age)
         self.manage = manage
         
     def __str__ (self):
