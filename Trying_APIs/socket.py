@@ -33,10 +33,10 @@ response = requests.get("http://api.open-notify.org/iss-pass.json", params=param
 data = response.json()
 
 head = response.headers
-headdict = head.json()
+# headdict = head.json()
 
-for x,y in headdict.items():
-    print("Key:{} Value:{}\n".format(x,y))
+# for x,y in headdict.items():
+#     print("Key:{} Value:{}\n".format(x,y))
 
 #print(type(data))
 #print(data)
