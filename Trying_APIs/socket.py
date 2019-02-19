@@ -39,6 +39,6 @@ head = response.headers
 #     print("Key:{} Value:{}\n".format(x,y))
 
 #print(type(data))
-#print(data)
+print(data)
 for x,y in data.items():
     print("Key:{} Value:{}\n".format(x,y))
