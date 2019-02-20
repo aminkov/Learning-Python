@@ -1,1 +1,3 @@
-import inspect
+import datetime
+
+print(datetime)
