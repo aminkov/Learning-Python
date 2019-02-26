@@ -1,3 +1,4 @@
+userdata = {}
 def get_user_data():
     """retrieves user data from the command line
     Returns:

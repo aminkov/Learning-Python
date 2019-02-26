@@ -2,6 +2,5 @@
 # Write a program which will calculate a user BMI.
 # Split your logic into functions, and organise your program as given bellow:
 
-import calcBMI
-
-print_results(bmi_category)
+import calcBMI as c
+c.mainBMI.print_results(bmi_category)
