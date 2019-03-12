@@ -1,4 +1,7 @@
-import time;
+import time
+import os
+from shutil import copyfile
+import datetime
 
 # def backup(src, dest):
 #   """Backup files in src folder into dest folder.
@@ -15,7 +18,6 @@ import time;
 #   """
 
 
-
 def get_timestamp():
   #get the current local date-time
   cldt = datetime.datetime.today()
@@ -23,4 +25,12 @@ def get_timestamp():
   timestamp = datetime.datetime.strftime(cldt, '%Y-%m-%d_%H_%M_%S')
   return timestamp
 
+def backup(src, dest):
+  # a = "testname.mp3"
+  # name = a+"_"+get_timestamp()
+  # print(name)
+  for i in os.listdir(src):
+    name = i+"_"+get_timestamp()
+    copyfile(src+i, dest+name)
 
+backup("/media/minrax/LinuxData/python/test/", "/media/minrax/LinuxData/python/backup/")
