@@ -19,16 +19,11 @@ import datetime
 
 
 def get_timestamp():
-  #get the current local date-time
   cldt = datetime.datetime.today()
-  # get the timestamp as a string with given format
   timestamp = datetime.datetime.strftime(cldt, '%Y-%m-%d_%H_%M_%S')
   return timestamp
 
 def backup(src, dest):
-  # a = "testname.mp3"
-  # name = a+"_"+get_timestamp()
-  # print(name)
   for i in os.listdir(src):
     name = i+"_"+get_timestamp()
     copyfile(src+i, dest+name)
