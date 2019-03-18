@@ -8,7 +8,6 @@ pylint = "*"
 
 [packages]
 matplotlib = "*"
-numby = "*"
 bpython = "*"
 numpy = "*"
 requests = "*"
