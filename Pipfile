@@ -14,3 +14,4 @@ requests = "*"
 
 [requires]
 python_version = "3.7"
+PIPENV_NO_INHERIT = "7"
