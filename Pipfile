@@ -11,6 +11,9 @@ matplotlib = "*"
 bpython = "*"
 numpy = "*"
 requests = "*"
+beautifulsoup = "*"
+lxml = "*"
+sqlite3 = "*"
 
 [requires]
 python_version = "3.7"
