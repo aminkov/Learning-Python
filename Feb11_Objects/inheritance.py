@@ -39,9 +39,4 @@ dev5 = Developer('Mitko',45, ['C++', 'HTML', 'CSS'])
 dev6 = Developer('Marto',5, ['C', 'Kotlin', 'Javascript'])
 
 manager1  = Manager('George', 40, [dev1, dev2, dev3, dev4, dev5, dev6])
-
 manager1.listproperties()
-
-
-
-
