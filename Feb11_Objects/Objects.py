@@ -8,7 +8,7 @@ class Person:
     def say_hello(self):
         print("I am {}, my age is {}".format(self.name, self.age))
 
-maria = Person("Maria")
+maria = Person("Maria", 100)
 pesho = Person("Pesho", 50)
 #maria.age = 80
 
